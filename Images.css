@@ -3,7 +3,7 @@
     border-color: rgb(0, 0, 0);
     border-width: 1px;
     box-shadow: 3px 5px 3px rgba(0, 255, 255, 0.6);
-    width: 310px;
+    width: 100%;
    
 }
 
@@ -35,15 +35,37 @@
 
 .shoe-type {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 310px 310px 310px 310px;
     column-gap: 15px;
     row-gap: 15px;
 }
 
+@media (max-width: 1270px) {
+    .shoe-type {
+        display: grid;
+        grid-template-columns: 310px 310px 310px;
+    }
+}
 
+@media (max-width: 970px) {
+    .shoe-type {
+        display: grid;
+        grid-template-columns: 310px 310px;
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    .shoe-type {
+        display: grid;
+        grid-template-columns: 310px;
+    }
+    
+}
 
 body {
-    width: 100%;
+    
     background-image: url(cover-page.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
